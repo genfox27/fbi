@@ -7,9 +7,12 @@ import json , sys , hashlib , os , time , marshal, getpass
 '''
 ###################################################################
 #                             COLOR
+def new_func():
+    G = '\033[32;1m'
+
 if sys.platform in ["linux","linux2"]:
 	W = "\033[0m"
-        G = '\033[32;1m'
+        new_func()
         R = '\033[31;1m'
 else:
 	W = ''
